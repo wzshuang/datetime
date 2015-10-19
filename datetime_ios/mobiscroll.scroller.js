@@ -1168,7 +1168,7 @@
             delay: 300,
             disabled: false,
             readonly: false,
-            closeOnOverlay: true,
+            closeOnOverlay: false,
             showOnFocus: true,
             showOnTap: true,
             showLabel: true,

@@ -14,6 +14,7 @@
             monthNamesShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
             dayNames: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
             dayNamesShort: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
+            ampmNames: ['上午', '下午'],
             shortYearCutoff: '+10',
             monthText: '月',
             dayText: '日',
@@ -203,7 +204,7 @@
                     } else if (k == o.a) {
                         offset++;
                         var upper = tord.match(/A/);
-                        addWheel(wg, [0, 1], upper ? ['AM', 'PM'] : ['am', 'pm'], s.ampmText);
+                        addWheel(wg, [0, 1], s.ampmNames || (upper ? ['AM', 'PM'] : ['am', 'pm']), s.ampmText);
                     }
                 }
 
